@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
 import Stark from "../../img/stark.jpg";
-import "../../styles/home.css";
+import "../../styles/perfil.css";
 
-export const Home = () => {
+export const Perfil = () => {
 	const { store, actions } = useContext(Context);
 
 	return (
@@ -16,26 +16,26 @@ export const Home = () => {
 				</div>
 			</div>
 			<form id="formulario" className="">
-			<h3 id="title" className="my-3" >Hola, Usuario</h3>
-			<div className="mb-3">
-				<label id="info-name" for="exampleInputName" className="form-label">Ingresa tu nombre</label>
-				<input type="text" className="form-control" id="name"/>
-				<button type="submit" id="boton">Cambiar</button>
+			<h2 id="title" className="my-3" >Hola, Usuario</h2>
+			<div className="mb-3 d-flex mx-4" id="name">
+				<label id="info-name" for="exampleInputName" className="form-label">Nombre</label>
+				<input type="text" className="form-control" id="data"/>
+				<button type="submit" id="boton2">Cambiar</button>
 			</div>
-			<div className="mb-3">
+			<div className="mb-3 d-flex mx-4">
 				<label id="email" for="exampleInputEmail1" className="form-label">Correo Electronico</label>
-				<input type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-				<button type="submit" id="boton">Cambiar</button>
+				<input type="email" className="form-control" id="data" aria-describedby="emailHelp"/>
+				<button type="submit" id="boton2">Cambiar</button>
 			</div>
-			<div className="mb-3">
+			<div className="mb-3 d-flex mx-4">
 				<label id="password" for="exampleInputPassword1" className="form-label">Contraseña</label>
-				<input type="password" className="form-control" id="exampleInputPassword1"/>
-				<button type="submit" id="boton">Cambiar</button>
+				<input type="password" className="form-control" id="data"/>
+				<button type="submit" id="boton2">Cambiar</button>
 			</div>
-			<div className="mb-3">
+			<div className="d-flex mx-4">
 				<label id="info-number" for="exampleInputNumber" className="form-label">Numero Telefonico</label>
-				<input type="text" className="form-control" id="number" placeholder="+56 9"/>
-				<button type="submit" id="boton">Cambiar</button>
+				<input type="text" className="form-control" id="data" placeholder="+56 9"/>
+				<button type="submit" id="boton2">Cambiar</button>
 			</div>
 			<button type="submit" id="boton">Guardar Cambios</button>
 		</form>	

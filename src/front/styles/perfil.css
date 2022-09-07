@@ -1,0 +1,82 @@
+body {
+    background-color : #2B3E84;
+}
+
+#img-perfil {
+    width:400px;
+    height: 300px;
+    border-radius: 75%;
+
+}
+
+#favoritos, #interacciones {
+    background-color: rgba(217,217,217,0.5);;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px 20px;
+    opacity: 0.8;
+}
+
+h2 {
+    color: rgb(241,214,71) ; 
+}
+p {
+    margin-top: 10px;
+    color: rgb(241,214,71) ;
+}
+
+#formulario {
+    width: 400px;
+    background-color: rgba(217,217,217,0.5);
+    border-radius: 20px 20px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 450px;
+
+}
+
+#info-name, #info-number, #email, #password, #c-password {
+    color: rgb(241,214,71) ;
+    opacity: 1;
+    font-size: 15px;
+}
+
+
+#boton {
+    background-color: #2B3E84;
+    border-radius: 20px 20px 20px 20px;
+    color: white; 
+    display: flex;
+    align-items: center;
+    margin-left: 50%;
+    width: 35%;
+    height: 35px;
+    margin-bottom: 3%;
+}
+
+#boton2 {
+    background-color: #2B3E84;
+    border-radius: 20px 20px 20px 20px;
+    color: white;
+    display: flex;
+    width: 35%;
+    align-items: center;
+    height: 35px;
+}
+
+#data {
+    height: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+  
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
