@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import Stark from "../../img/stark.jpg";
+import usuario from "../../img/usuario.png";
 import "../../styles/perfil.css";
 
 export const Perfil = () => {
@@ -9,7 +9,7 @@ export const Perfil = () => {
 	return (
 		<div className="d-flex justify-content-around my-4">
 			<div className="d-flex flex-column align-items-center">
-				<img  id="img-perfil" src={Stark} alt="equipo stark"/>
+				<img  id="img-perfil" src={usuario} alt="equipo stark"/>
 				<div className="d-flex justify-content-bewteen my-4">
 					<div id="favoritos" className="mx-3"><p>Favoritos</p></div>
 					<div id="interacciones"><p>Ultimas interacciones</p></div>
