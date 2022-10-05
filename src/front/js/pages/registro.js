@@ -38,7 +38,7 @@ export const Registro = () => {
 		<NavbarRegistro/>
 			<div className="d-flex justify-content-around my-4">
 				<div id="imagen-comentario" className="d-flex flex-column align-items-center">
-					<img id="img-envio" src={dinero} alt="envio de dinero al exterior" style={{width:"500px",height:"500px" }}/>
+					<img id="img-envio" src={dinero} alt="envio de dinero al exterior" />
 					<div className="d-flex">
 						<img id="avatar" src={avatar} alt="persona que da el dialogo" />
 						<div className="speech-bubble">Regístrate gratis con nosotros, compara entre las más conocidas casas de cambio del país y elige la mejor opción para TI.</div>
@@ -48,7 +48,7 @@ export const Registro = () => {
 					<form id="formulario" onSubmit={enviardatos2}>
 						<h3 id="title" className="my-3">Regístrate</h3>
 						<div className="mb-3">
-							<label id="info-name" for="exampleInputName" className="form-label">Ingresa tu nombre y apellido</label>
+							<label id="info-name" for="exampleInputName" className="form-label">Nombre Completo</label>
 							<input type="text" className="form-control" id="name" name="nombre" onChange={nuevodato}/>
 						</div>
 						<div className="mb-3">
@@ -60,12 +60,8 @@ export const Registro = () => {
 							<input type="password" name="contraseña" className="form-control" id="exampleInputPassword1" onChange={nuevodato}/>
 						</div>
 						<div className="mb-3">
-							<label id="c-password" for="exampleInputPassword1" className="form-label">Confirma tu contraseña</label>
-							<input type="password" name="repcontraseña" className="form-control" id="exampleInputPassword2" onChange={nuevodato} />
-						</div>
-						<div className="mb-3">
 							<label id="info-number" for="exampleInputNumber" className="form-label">Número Telefónico</label>
-							<input type="number" name="telefono" className="form-control" id="number" placeholder="+56 9" onChange={nuevodato} />
+							<input type="text" name="telefono" className="form-control" id="number" placeholder="+56 9" onChange={nuevodato} />
 						</div>
 						
 						<button type="submit" id="boton3">Crear Usuario</button>

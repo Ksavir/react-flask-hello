@@ -46,7 +46,6 @@ export const Navbarlanding = () => {
         </div>
 
         <div className="ml-auto">
-          
       <Button variant="primary" onClick={handleShow} className="buttonNavbar">
         Iniciar sesión
       </Button>

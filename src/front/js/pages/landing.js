@@ -162,24 +162,6 @@ export const Landing = () => {
           </div>
         </div>
       </div>
-      <div className="newslatter container">
-        <form action="">
-          <h1>Suscríbete para recibir nuestras novedades.</h1>
-          <p>Sólo te enviaremos información relevante y que sea de interés.</p>
-          <div className="email-box">
-            <FontAwesomeIcon className="mail" icon={faEnvelope}/>
-            <input className="email-newsletter"
-              type="email"
-              name=""
-              value=""
-              placeholder="Ingrese su email"
-            ></input>
-            <button className="buttonregister2" type="button" name="button">
-              Suscribirme
-            </button>
-          </div>
-        </form>
-      </div>
     </div>
     </>
   );

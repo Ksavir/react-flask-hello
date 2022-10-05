@@ -8,8 +8,8 @@ export const NavbarCasasCambio = () => {
 		<nav className="navbar navbar-light bg-light fixed-top">
 			<div className="container-fluid">
 				<Link to="/">
-					<img id="logo" src={logo} alt="Logo Casa de Cambio" style={{width:"55px"}} />
-					<span id="titulo" className="navbar-brand mx-2 my-2 h1">CACHA EL CAMBIO</span>
+					<img id="logo" src={logo} alt="Logo Casa de Cambio"/>
+					<span id="titulo" className="navbar-brand mx-2 my-2 p-0">Cacha el cambio</span>
 				</Link>
 				<div className="ml-auto">
 					<Link to="/perfil">

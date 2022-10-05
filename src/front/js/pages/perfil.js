@@ -18,26 +18,26 @@ export const Perfil = () => {
 					<div id="interacciones"><p>Ultimas interacciones</p></div>
 				</div>
 			</div>
-			<form id="formulario" className="">
+			<form id="formulario-perfil" className="">
 			<h2 id="title" className="my-3" >Hola, Usuario</h2>
 			<div className="mb-3 d-flex mx-4" id="name">
 				<label id="info-name" for="exampleInputName" className="form-label">Nombre</label>
-				<input type="text" className="form-control" id="data"/>
+				<input type="text" className="form-control" id="data-perfil"/>
 				<button type="submit" id="boton2">Cambiar</button>
 			</div>
 			<div className="mb-3 d-flex mx-4">
 				<label id="email" for="exampleInputEmail1" className="form-label">Correo Electronico</label>
-				<input type="email" className="form-control" id="data" aria-describedby="emailHelp"/>
+				<input type="email" className="form-control" id="data-perfil" aria-describedby="emailHelp"/>
 				<button type="submit" id="boton2">Cambiar</button>
 			</div>
 			<div className="mb-3 d-flex mx-4">
 				<label id="password" for="exampleInputPassword1" className="form-label">Contraseña</label>
-				<input type="password" className="form-control" id="data"/>
+				<input type="password" className="form-control" id="data-perfil"/>
 				<button type="submit" id="boton2">Cambiar</button>
 			</div>
 			<div className="d-flex mx-4">
 				<label id="info-number" for="exampleInputNumber" className="form-label">Numero Telefonico</label>
-				<input type="text" className="form-control" id="data" placeholder="+56 9"/>
+				<input type="text" className="form-control" id="data-perfil" placeholder="+56 9"/>
 				<button type="submit" id="boton2">Cambiar</button>
 			</div>
 			<button type="submit" id="boton1">Guardar Cambios</button>

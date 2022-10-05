@@ -69,7 +69,7 @@ export const CasasCambio = () => {
 			</div>
 			<div id="maps">
 				<div id="dropdown">
-					<select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="casas" id="casas-cambio" onChange={(evento) => mapa(evento)}>
+					<select className="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="casas" id="casas-cambio" onChange={(evento) => mapa(evento)}>
 						<option selected>Busca tu casa</option>
 						<option value="cambios-suiza">Cambios Suiza</option>
 						<option value="more-exchange">More Exchange</option>
