@@ -17,7 +17,7 @@ export const PaginaHome = () => {
             <br></br>
           </bl>
           <h1 className="textocolor" id="title">
-            Consigue la mejor tasa aqui
+            Consigue la mejor tasa aquí
           </h1>
           <bl>
             <br></br>

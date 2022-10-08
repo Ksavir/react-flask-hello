@@ -126,7 +126,7 @@ h1{
 .tarjetas{
     padding: 20px;
     background-color: rgb(245, 244, 244);
-   margin-bottom: 25%; 
+   
 }
 .tarjeta1{
     border: none;
@@ -148,6 +148,7 @@ h1{
     color:  #2B3E84 ;
     background-color:  rgb(245, 244, 244);
     font-family: 'Sansita', sans-serif;
+    margin-bottom: 5%; 
 }
 .footer{
     background-color:rgb(245, 244, 244);
