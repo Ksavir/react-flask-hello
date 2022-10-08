@@ -38,7 +38,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3001-ksavir-reactflaskhello-jstspz7we7e.ws-us67.gitpod.io/api/login",
+          "https://3001-ksavir-reactflaskhello-26m19twbemk.ws-us70.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -73,7 +73,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3001-ksavir-reactflaskhello-jstspz7we7e.ws-us67.gitpod.io/api/registro",
+          "https://3001-ksavir-reactflaskhello-26m19twbemk.ws-us70.gitpod.io/api/registro",
           requestOptions
         )
           .then((response) => response.json())

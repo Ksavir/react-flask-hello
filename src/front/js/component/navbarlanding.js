@@ -119,7 +119,7 @@ export const Navbarlanding = () => {
                             Iniciar Sesión
                           </button>
                         </div>
-                        <div className="my-3">
+                        {/* <div className="my-3">
                           <span>
                             ¿No tienes cuenta? <a href="#">Regístrate</a>
                           </span>
@@ -164,7 +164,7 @@ export const Navbarlanding = () => {
                               </button>
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                       </form>
                     </div>
                   </div>
