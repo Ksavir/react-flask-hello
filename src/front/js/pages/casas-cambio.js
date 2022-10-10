@@ -46,7 +46,7 @@ export const CasasCambio = () => {
 								<div className="card-back">
 									<div className="card-body">
 										<p>Pedro de Valdivia 29, Providencia</p>
-										<p>Santiago de Chile+56 22 233 1865</p>
+										<p>+56 22 233 1865</p>
 										<p>info@moreexchange.cl</p>
 										<button id="boton-casa"><a href="http://www.moreexchange.cl/" target="blank">Ir a la web</a></button>
 									</div>
