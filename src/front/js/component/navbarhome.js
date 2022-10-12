@@ -7,15 +7,12 @@ export const Navbarhome = () => {
 		<nav className="navbar">
 			<div className="header container-fluid">
 				<div className="brand">
-				<Link to="/">
+				<Link to="/pagina-home">
 					<img className="logo_ph" src={logo}/>
 				</Link>
 				<span className="nombre_pagina-home">Cacha el cambio</span>
 				</div>
 				<div className="ml-auto">
-					<Link to="/perfil">
-						<button className="buttonNavbar_ph">Perfil/Usuario</button>
-					</Link>
 					<Link to="/casas-cambio">
 						<button className="buttonNavbar_ph">Casa de Cambio</button>
 					</Link>

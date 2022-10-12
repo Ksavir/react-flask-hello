@@ -7,14 +7,11 @@ export const NavbarCasasCambio = () => {
 	return (
 		<nav className="navbar navbar-light bg-light fixed-top">
 			<div className="container-fluid">
-				<Link to="/">
+				<Link to="/pagina-home">
 					<img id="logo" src={logo} alt="Logo Casa de Cambio"/>
 					<span id="titulo" className="navbar-brand mx-2 my-2 p-0">Cacha el cambio</span>
 				</Link>
 				<div className="ml-auto">
-					<Link to="/perfil">
-						<button className="boton mx-2">Perfil</button>
-					</Link>
 					<Link to="/pagina-home">
 						<button className="boton mx-2">Home</button>
 					</Link> 
