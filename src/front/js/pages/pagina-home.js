@@ -6,7 +6,27 @@ import { Navbarhome } from "../component/navbarhome";
 
 export const PaginaHome = () => {
   const { store, actions } = useContext(Context);
-
+  const convertir = () => {
+    var valore = parseInt(document.getElementById("valor").value);
+    var resultado = 0;
+    var dolar = 935;
+    var euro = 906;
+    var ves = 0.01
+    if (document.getElementById("uno").checked) {
+      resultado = valore / dolar;
+      alert(
+        "El cambio de pesos chilenos a dólares es: $" + resultado.toFixed(2)
+      );
+    } else if (document.getElementById("dos").checked) {
+      resultado = valore / euro;
+      alert("El cambio de pesos chilenos a euros es: " + resultado.toFixed(2));
+    } else if (document.getElementById("tres").checked) {
+      resultado = valore * ves;
+      alert("El cambio de pesos chilenos a bolívares es: " + resultado.toFixed(2));
+    } else {
+      alert("Debe completar todos los campos");
+    }
+  };
   return (
     <>
       <Navbarhome />
@@ -16,60 +36,28 @@ export const PaginaHome = () => {
           <bl>
             <br></br>
           </bl>
-          <h1 className="textocolor" id="title">
-            Consigue la mejor tasa aquí
-          </h1>
-          <bl>
-            <br></br>
-          </bl>
-          <div className="mb-3  mx-4" id="name">
-            <label
-              id="ingresar-monto"
-              for="exampleInputName"
-              className="form-label"
-            >
-              Ingresa un monto
-            </label>
-            <input type="usuario" className="form-control" id="data" />
-            <div className="dropdown">
-              <select id="divisas" className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Selecciona divisa</option>
-                <option value="usdolar">USD</option>
-                <option value="clpesos">CLP</option>
-                <option value="euro">EU</option>
-              </select>
-            </div>
-          </div>
-          <div className="mb-3 d-flex mx-4">
-            <label
-              id="monto-recibir"
-              for="exampleInputEmail1"
-              className="form-label"
-            >
-              Monto a recibir
-            </label>
-            <input type="email" className="form-control" id="data" />
-            <div className="dropdown">
-              <select id="divisas" className="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
-                <option selected>Selecciona divisa</option>
-                <option value="usdolar">USD</option>
-                <option value="clpesos">CLP</option>
-                <option value="euro">EU</option>
-              </select>
-            </div>
-          </div>
-          <div className="mb-3 d-flex mx-4">
-            <label
-              id="tipo-cambio"
-              for="exampleInputPassword1"
-              className="form-label"
-            >
-              Tasa de Cambio
-            </label>
-            <input type="text" className="form-control" id="data" />
-            <button type="submit" id="botonCambiar">
-              Cambiar
-            </button>
+          <div className="convertidor">
+            <h1 className="textocolor" id="title">
+              Consigue la mejor tasa aquí
+            </h1>
+            <bl>
+              <br></br>
+            </bl>
+            <h6 className="titulos">Seleccione la moneda que desea cambiar:</h6>
+            <input type="radio" name="cambio" id="uno" />
+            USD
+            <input type="radio" name="cambio" id="dos" />
+            EUR
+            <input type="radio" name="cambio" id="tres" />
+            VES
+            <h6 className="titulos">Ingrese monto en pesos chilenos:</h6>
+            <input type="number" id="valor" min="1000" max="1000000" />
+            <input
+              type="button"
+              id="cotizador"
+              value="Cotizar"
+              onClick={convertir}
+            />
           </div>
         </form>
         <div className="tarjetas card-group">
@@ -120,7 +108,12 @@ export const PaginaHome = () => {
             />
 
             <div class="card-body">
-              <button type="submit" href="#" class="card-link" id="botonlinkCCC">
+              <button
+                type="submit"
+                href="#"
+                class="card-link"
+                id="botonlinkCCC"
+              >
                 Ir a casa de cambio
               </button>
             </div>
@@ -166,7 +159,12 @@ export const PaginaHome = () => {
             />
 
             <div class="card-body">
-              <button type="submit" href="#" class="card-link" id="botonlinkCCC">
+              <button
+                type="submit"
+                href="#"
+                class="card-link"
+                id="botonlinkCCC"
+              >
                 Ir a casa de cambio
               </button>
             </div>
@@ -212,7 +210,12 @@ export const PaginaHome = () => {
             />
 
             <div class="card-body">
-              <button type="submit" href="#" class="card-link" id="botonlinkCCC">
+              <button
+                type="submit"
+                href="#"
+                class="card-link"
+                id="botonlinkCCC"
+              >
                 Ir a casa de cambio
               </button>
             </div>

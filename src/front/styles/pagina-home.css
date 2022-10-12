@@ -18,6 +18,40 @@ margin-top: 15px;
     margin: 10px 10px 10px 10px;
 }
 
+.convertidor{
+    font-family: "Luckiest Guy", cursive;
+    color: #2B3E84;
+    text-align: center;
+}
+
+.titulos {
+font-size: 22px;
+margin-top: 2%;
+}
+#uno{
+    width: 80px;
+    height: 15px;
+    margin-top: 2%;
+}
+#dos{
+    width: 80px;
+    height: 15px;
+}
+#tres{
+    width: 80px;
+    height: 15px;
+}
+#valor{
+    font-size: 20px;
+    border-radius: 10%;
+    margin-top: 2%;
+    margin-right: 10px;
+}
+#cotizador{
+    font-size: 20px;
+    border-radius: 10%;
+}
+
 #divisas {
     font-size: 19px;
     width: 100%;
