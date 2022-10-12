@@ -38,7 +38,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3001-ksavir-reactflaskhello-dk0caqwp824.ws-us70.gitpod.io/api/login",
+          "https://3001-ksavir-reactflaskhello-e7m8jn8uj6n.ws-us71.gitpod.io/api/login",
           requestOptions
         )
           .then((response) => response.json())
@@ -73,7 +73,7 @@ const getState = ({ getStore, getActions, setStore }) => {
         };
 
         fetch(
-          "https://3001-ksavir-reactflaskhello-dk0caqwp824.ws-us70.gitpod.io/api/registro",
+          "https://3001-ksavir-reactflaskhello-e7m8jn8uj6n.ws-us71.gitpod.io/api/registro",
           requestOptions
         )
           .then((response) => response.json())
@@ -85,6 +85,48 @@ const getState = ({ getStore, getActions, setStore }) => {
           })
           .catch((error) => console.log("error", error));
       },
+      prueba: () => {
+        const { moreexchange } = getStore();
+        let parser = new DOMParser();
+        let doc = parser.parseFromString(moreexchange, "text/html");
+        console.log(doc);
+      },
+      getExchange: async () => {
+        var requestOptions = {
+          method: "GET",
+          redirect: "follow",
+        };
+
+        await fetch(
+          "https://3000-mojonapower-scrapingand-coo912ikrwm.ws-us70.gitpod.io/",
+          requestOptions
+        )
+          .then((response) => response.json())
+          .then((result) => {
+            console.log(result);
+            let parser = new DOMParser();
+            let doc = parser.parseFromString(result.moreexchange, "text/html");
+            console.log(doc.querySelectorAll("[class*=ninja_table_row]"));
+            setStore({ moreexchange: result.moreexchange });
+          })
+          .catch((error) => console.log("error", error));
+      
+
+      await fetch(
+        "https://3000-mojonapower-scrapingand-coo912ikrwm.ws-us70.gitpod.io/casa2",
+        requestOptions
+      )
+        .then((response) => response.json())
+        .then((result) => {
+          console.log(result);
+          let parser = new DOMParser();
+          let doc = parser.parseFromString(result.cambiossuiza, "text/html");
+          console.log(doc.querySelectorAll("[class*=ninja_table_row]"));
+          setStore({ cambiossuiza: result.cambiossuiza });
+        })
+        .catch((error) => console.log("error", error));
+    },
+      
 
       getMessage: async () => {
         try {

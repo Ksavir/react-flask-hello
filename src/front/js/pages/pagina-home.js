@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { Context } from "../store/appContext";
-import logo from "../../img/logo.png";
+import guinazu from "../../img/guinazu.png";
+import coinc from "../../img/coinc.png";
 import "../../styles/pagina-home.css";
 import { Navbarhome } from "../component/navbarhome";
 
@@ -11,7 +12,7 @@ export const PaginaHome = () => {
     var resultado = 0;
     var dolar = 935;
     var euro = 906;
-    var ves = 0.01
+    var ves = 0.01;
     if (document.getElementById("uno").checked) {
       resultado = valore / dolar;
       alert(
@@ -22,7 +23,9 @@ export const PaginaHome = () => {
       alert("El cambio de pesos chilenos a euros es: " + resultado.toFixed(2));
     } else if (document.getElementById("tres").checked) {
       resultado = valore * ves;
-      alert("El cambio de pesos chilenos a bolívares es: " + resultado.toFixed(2));
+      alert(
+        "El cambio de pesos chilenos a bolívares es: " + resultado.toFixed(2)
+      );
     } else {
       alert("Debe completar todos los campos");
     }
@@ -60,164 +63,44 @@ export const PaginaHome = () => {
             />
           </div>
         </form>
-        <div className="tarjetas card-group">
-          <div id="cartaCasa" class="card">
-            <div>
-              <img
-                className="logo"
-                class="card-img-top"
-                id="fotocartacasa"
-                src={logo}
-              />
+        <div>
+          <div id= "conjuntocasas">
+            <div id="cartaCasa" class="card">
+              <div>
+                <img
+                  className="logo"
+                  class="card-img-top"
+                  id="fotocartacasa"
+                  src={coinc}
+                />
+                <br></br>
+              </div>
+              <div>
+                <div dangerouslySetInnerHTML={{ __html: store.moreexchange }} />
+                <a
+                  onclick="window.location = 'gracias.html'"
+                  target="_new"
+                  href="https://www.moreexchange.cl/"
+                >
+                  Ir a Moreexchange
+                </a>
+              </div>
             </div>
-            <div>
-              <bl>
+            <div id="cartaCasa2" class="card">
+              <div>
+                <img className="logo" id="fotocartacasa" src={guinazu} />
+              </div>
+              <div>
+                <div dangerouslySetInnerHTML={{ __html: store.cambiossuiza }} />
                 <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <div class="card-body"></div>
-            </div>
-            <div>
-              <input
-                type="usuario"
-                className="form-control"
-                id="CambioRecibirCasa1"
-              />
-            </div>
-            <bl>
-              <br></br>
-            </bl>
-            <input
-              type="usuario"
-              className="form-control"
-              id="infooRecibirCasa1"
-            />
-
-            <div class="card-body">
-              <button
-                type="submit"
-                href="#"
-                class="card-link"
-                id="botonlinkCCC"
-              >
-                Ir a casa de cambio
-              </button>
-            </div>
-          </div>
-          <div id="cartaCasa2" class="card">
-            <div>
-              <img className="logo" id="fotocartacasa" src={logo} />
-            </div>
-            <div>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-            </div>
-            <div class="card-body"></div>
-
-            <input
-              type="usuario"
-              className="form-control"
-              id="CambioRecibirCasa2"
-            />
-            <bl>
-              <br></br>
-            </bl>
-            <input
-              type="usuario"
-              className="form-control"
-              id="infooRecibirCasa2"
-            />
-
-            <div class="card-body">
-              <button
-                type="submit"
-                href="#"
-                class="card-link"
-                id="botonlinkCCC"
-              >
-                Ir a casa de cambio
-              </button>
-            </div>
-          </div>
-          <div id="cartaCasa3" class="card">
-            <div>
-              <img className="logo" id="fotocartacasa" src={logo} />
-            </div>
-            <div>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-              <bl>
-                <br></br>
-              </bl>
-            </div>
-            <div class="card-body"></div>
-
-            <input
-              type="usuario"
-              className="form-control"
-              id="CambioRecibirCasa3"
-            />
-            <bl>
-              <br></br>
-            </bl>
-            <input
-              type="usuario"
-              className="form-control"
-              id="infooRecibirCasa3"
-            />
-
-            <div class="card-body">
-              <button
-                type="submit"
-                href="#"
-                class="card-link"
-                id="botonlinkCCC"
-              >
-                Ir a casa de cambio
-              </button>
+                <a
+                  onclick="window.location = 'gracias.html'"
+                  target="_new"
+                  href="https://www.guinazu.cl/"
+                >
+                  Ir a Guiñazu
+                </a>
+              </div>
             </div>
           </div>
         </div>

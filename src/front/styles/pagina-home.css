@@ -157,48 +157,45 @@ margin-top: 2%;
   
 }
 
-#cartaCasa, #cartaCasa2, #cartaCasa3{
+#cartaCasa{
 background-color: rgba(217,217,217,0.5);
 border-radius: 20px 20px ;
 color: white;
 width: 401px;
-height: 450px;
+height: 1050px;
 float: left;
-top: 550px;
-left: 110px;
+top: 460px;
+left:250px;
 margin-right: 120px;
 align-items: center;
 
 }
 
-#CambioRecibirCasa1, #CambioRecibirCasa2, #CambioRecibirCasa3{
-  
-width: 300px;
-height: 50px;
+#cartaCasa2{
+    background-color: rgba(217,217,217,0.5);
+    border-radius: 20px 20px ;
+    color: white;
+    width: 401px;
+    height: 1050px;
+    float: left;
+    top: 460px;
+    left: 450px;
+    margin-right: 120px;
+    align-items: center;
+    text-align: center;
 }
 
-#infooRecibirCasa1, #infooRecibirCasa2, #infooRecibirCasa3{
-width: 300px;
-height: 150px;
-justify-content: center;
 
-}
 
 #fotocartacasa{   
-position: absolute;
 align-content: center;
-width: 150px;
+border-radius: 20px ;
+width: 400px;
 height: 150px;
 left: 170px;
 top: 0px;
 }
 
-#botonlinkCCC{
-box-shadow: 0px 10px 14px -7px #276873;
-border-radius:8px;
-border: none;
-background:linear-gradient(to bottom, #599bb3 5%, #2B3E84 100%);
-color: white;    
-width: 170px;
-height: 40px;
+#conjuntocasas{
+    text-align: center;
 }
