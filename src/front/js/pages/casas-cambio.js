@@ -3,7 +3,7 @@ import { Context } from "../store/appContext";
 import cambioSuiza from "../../img/cambios-suiza.png";
 import moreEx from "../../img/moreExchange.png";
 import cambioStgo from "../../img/cambioSantiago.png";
-import cambioCostero from "../../img/cambioCostero.png";
+import guinazu from "../../img/guinazu.png";
 import {NavbarCasasCambio } from "../component/navbar-casa-cambio"
 import "../../styles/casas-cambio.css";
 
@@ -77,13 +77,15 @@ export const CasasCambio = () => {
 							<div className="card card-flip">
 								<div className="card-front">
 									<div className="card-body">
-										<img id="cambioCostero" src={cambioCostero} alt="Cambio Costero" />
+										<img id="cambioCostero" src={guinazu} alt="Guinazu" />
 									</div>
 								</div>
 								<div className="card-back">
 									<div className="card-body">
-										<p>Bandera #230</p>
-										<p>+56 2 2696 3008</p>
+										<p>Bandera 585</p>
+										<p>Av. El Bosque Norte 0192</p>
+										<p>Libertador Bernardo O'Higgins 3156</p>
+										<p>+56 2 3251 0902 / 03</p>
 										<button id="boton-casa"><a href="http://www.cambiocostero.cl/" target="blank">Ir a la web</a></button>
 									</div>
 								</div>
@@ -97,7 +99,7 @@ export const CasasCambio = () => {
 									<option value="cambios-suiza">Cambios Suiza</option>
 									<option value="more-exchange">More Exchange</option>
 									<option value="cambios-santiago">Cambios Santiago</option>
-									<option value="cambio-costero">Cambio Costero</option>
+									<option value="guinazu">Guiñazu</option>
 								</select>
 							</div>
 
@@ -113,7 +115,7 @@ export const CasasCambio = () => {
 										?
 										<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1177.4338020645853!2d-70.60204381919567!3d-33.415795004387576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662cf41cfa6b755%3A0x3c7ed9b44e3495a2!2sSan%20Sebasti%C3%A1n%202814%2C%20Las%20Condes%2C%207550151%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1665365604758!5m2!1ses-419!2scl" width="1300" height="150" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"/>
 										:
-										(seleccionMapa == "cambio-costero") && <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.2593125877843!2d-70.65406968426508!3d-33.44255000449414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c5a1c6dc8fab%3A0x6bf7312a25cad455!2sCambio%20Costero%20-%20Money%20exchange%20-%20Casa%20de%20Cambio!5e0!3m2!1ses-419!2scl!4v1662820229590!5m2!1ses-419!2scl" width="1300" height="150"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
+										(seleccionMapa == "guinazu") && <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d53270.8925318898!2d-70.63682827183715!3d-33.4380815833659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scambios%20gui%C3%B1azu!5e0!3m2!1ses-419!2scl!4v1665602842183!5m2!1ses-419!2scl" width="1300" height="150"  allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
 						}
 					</div>
 				</div>
